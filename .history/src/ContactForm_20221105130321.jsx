@@ -69,7 +69,7 @@ const ContactForm = () => {
               Email
             </label>
             <input
-              type="email"
+              type="text"
               id="email"
               className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
               placeholder="yourname@email.com"

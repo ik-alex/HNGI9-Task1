@@ -22,8 +22,8 @@ const Links = () => {
 
         <Link
           id="contact"
-          to="/contact"
           className="block bg-darkGrey rounded-lg text-center mb-4  py-4 px-6 md:px-8 hover:cursor-pointer hover:bg-hoverGrey"
+          to="/contact"
         >
           Contact me
         </Link>
