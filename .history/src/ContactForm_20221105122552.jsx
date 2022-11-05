@@ -44,7 +44,7 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="first_name"
-                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+                className="colored_input border-2 rounded-md pl-2 py-2"
                 placeholder="Enter your first name"
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
@@ -57,9 +57,9 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="last_name"
-                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+                className="colored_input border-2 rounded-md pl-2 py-2"
                 placeholder="Enter your first name"
-                value={last}
+                value={value}
                 onChange={(e) => setValue(e.target.value)}
               />
             </div>
@@ -71,9 +71,9 @@ const ContactForm = () => {
             <input
               type="text"
               id="email"
-              className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+              className="colored_input border-2 rounded-md pl-2 py-2"
               placeholder="yourname@email.com"
-              value={email}
+              value={value}
               onChange={(e) => setValue(e.target.value)}
             />
             {/* flex-1 w-full p-1 pl-2 border-2 rounded-lg focus:outline-none */}

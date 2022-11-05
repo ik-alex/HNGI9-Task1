@@ -4,9 +4,6 @@ import Footer from "./Footer";
 const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
-  const [value, setValue] = useState("");
-  const [last, setLast] = useState("");
-  const [email, setEmail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     // message === ""
@@ -44,37 +41,31 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="first_name"
-                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+                className=""
                 placeholder="Enter your first name"
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
               />
             </div>
-            <div className=" flex flex-col space-y-2 w-full">
+            <div className=" w-full">
               <label htmlFor="name" className="pb-2">
                 Last Name
               </label>
               <input
                 type="text"
                 id="last_name"
-                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+                className=""
                 placeholder="Enter your first name"
-                value={last}
-                onChange={(e) => setValue(e.target.value)}
               />
             </div>
           </div>
-          <div className="flex flex-col space-y-2 ">
+          <div className=" ">
             <label htmlFor="email" className="pb-2">
               Email
             </label>
             <input
               type="text"
               id="email"
-              className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+              className=" "
               placeholder="yourname@email.com"
-              value={email}
-              onChange={(e) => setValue(e.target.value)}
             />
             {/* flex-1 w-full p-1 pl-2 border-2 rounded-lg focus:outline-none */}
           </div>

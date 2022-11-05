@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  border-box: box-sizing;
+}
+
+.img-container::after {
+  position: absolute;
+  content: "";
+  height: 6rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover.img-container::after {
+  background-color: #344054bf;
+}
+
+.camera {
+  position: absolute;
+  z-index: 999;
+  top: 70px;
+  left: 35px;
+  display: none;
+}
+
+.img-container:hover .camera {
+  display: block;
+}
+
+.shareFull {
+  position: relative;
+  display: inline-block;
+  right: 0;
+}
+
+.sharelink {
+  visibility: hidden;
+  position: absolute;
+  margin: 0;
+  width: 77px;
+  font-size: 12px;
+  background-color: #101828;
+  filter: drop-shadow(1px 1px 8px #10182848);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1;
+  right: 50px;
+  transition: visibility 0.3s ease;
+}
+
+.shareFull .sharelink::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -5px;
+  right: -21%;
+  border: 10px solid #101828;
+  border-color: transparent transparent transparent #101828;
+}
+
+.shareFull:hover .sharelink {
+  visibility: visible;
+}
+
+.dotShare {
+  display: none;
+}
+
+#message:focus {
+  box-shadow: 0 0 0 4px rgb(209, 233, 255);
+  border-color: #1570ef;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  display: flex;
+  cursor: pointer;
+}
+
+.checedkbox-container:focus {
+  border: 1.5px solid #1570ef;
+}
+
+.checkbox-container label::before {
+  content: "";
+  width: 1.5em;
+  border-radius: 0.3rem;
+  margin-right: 0.5em;
+  border: 0.05em solid black;
+}
+
+.checkbox-container input[type="checkbox"]:checked + label::before {
+  content: "\002713";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #1570ef;
+  color: #1570ef;
+}
+
+@media (max-width: 768px) {
+  .arrowShare {
+    display: none;
+  }
+  .dotShare {
+    display: block;
+  }
+
+  .shareFull {
+    right: -20%;
+  }
+}

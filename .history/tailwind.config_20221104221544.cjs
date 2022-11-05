@@ -16,7 +16,6 @@ module.exports = {
         darkerBlue: "hsl(215, 87%, 51%)",
         backgroundBlue: "hsl(218, 80%, 46%)",
         lightBlue: "hsl(206, 100%, 85%)",
-        errorMessage: " 	hsl(8, 94%, 55%)",
       },
     },
   },

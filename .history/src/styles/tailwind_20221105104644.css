@@ -110,11 +110,10 @@
 #message:focus.active {
   box-shadow: 0 0 0 4px rgb(255, 211, 204);
 }
-/* 
+
 .colored_input:focus {
   border-color: #1570ef;
-  border-style: solid;
-} */
+}
 
 .errMessage.active {
   display: block;

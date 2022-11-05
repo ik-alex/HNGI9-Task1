@@ -85,13 +85,6 @@
 }
 
 .inputs {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px 15px;
-  border-radius: 7px;
-  font-weight: 500;
-  outline: 0;
-  border: 1px solid #d0d5dd;
 }
 
 .inputs:focus {
@@ -110,11 +103,6 @@
 #message:focus.active {
   box-shadow: 0 0 0 4px rgb(255, 211, 204);
 }
-/* 
-.colored_input:focus {
-  border-color: #1570ef;
-  border-style: solid;
-} */
 
 .errMessage.active {
   display: block;
@@ -174,62 +162,6 @@
   border: solid #1570ef;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-}
-
-.contact {
-  margin-top: 2rem;
-  width: 100%;
-}
-
-.contact-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  margin-bottom: 20px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.contact > div > label,
-.contact-info > div > label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 15px;
-  font-weight: 500;
-  color: #344054;
-}
-
-.contact-info > div {
-  width: 50%;
-}
-
-.contact div > input,
-.contact-info > div > input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 12px 15px;
-  border-radius: 7px;
-  font-weight: 500;
-  outline: 0;
-  border: 1px solid #d0d5dd;
-}
-
-.contact div > input:focus,
-.contact-info > div > input:focus {
-  border-color: #84caff;
-  transition: all 0.5s ease;
-}
-
-.message:focus {
-  border-color: #84caff;
-  transition: all 0.5s ease;
-  box-shadow: 0 0 0 4px rgb(209, 233, 255);
-}
-
-.contact > div:nth-child(2),
-.contact > div:nth-child(3) {
-  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {

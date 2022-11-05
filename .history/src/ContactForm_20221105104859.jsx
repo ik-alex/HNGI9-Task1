@@ -4,9 +4,6 @@ import Footer from "./Footer";
 const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
-  const [value, setValue] = useState("");
-  const [last, setLast] = useState("");
-  const [email, setEmail] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     // message === ""
@@ -44,10 +41,8 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="first_name"
-                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+                className="colored_input border-2 rounded-md pl-2 py-2"
                 placeholder="Enter your first name"
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
               />
             </div>
             <div className=" flex flex-col space-y-2 w-full">
@@ -57,10 +52,8 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="last_name"
-                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+                className="colored_input border-2 rounded-md pl-2 py-2"
                 placeholder="Enter your first name"
-                value={last}
-                onChange={(e) => setValue(e.target.value)}
               />
             </div>
           </div>
@@ -71,10 +64,8 @@ const ContactForm = () => {
             <input
               type="text"
               id="email"
-              className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+              className="colored_input border-2 rounded-md pl-2 py-2"
               placeholder="yourname@email.com"
-              value={email}
-              onChange={(e) => setValue(e.target.value)}
             />
             {/* flex-1 w-full p-1 pl-2 border-2 rounded-lg focus:outline-none */}
           </div>
