@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 
 const ContactForm = () => {
-  const name = "Ikenna Nwajagu";
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
   const [value, setValue] = useState("");
@@ -58,7 +57,7 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="last_name"
-                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus:darkerBlue focus:border-transparent"
+                className="colored_input border-2 rounded-md pl-2 py-2 focus:outline-none focus:ring-2 focus: focus:border-transparent"
                 placeholder="Enter your first name"
                 value={last}
                 onChange={(e) => setValue(e.target.value)}
@@ -121,7 +120,7 @@ const ContactForm = () => {
           </div> */}
 
           <label className="container">
-            You agree to providing your data to {name} who may contact you.
+            You agree to providing your data to name who may contact you.
             <input type="checkbox" />
             <span className="checkmark"></span>
           </label>

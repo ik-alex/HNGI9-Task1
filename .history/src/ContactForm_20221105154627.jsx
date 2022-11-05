@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Footer from "./Footer";
 
 const ContactForm = () => {
-  const name = "Ikenna Nwajagu";
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
   const [value, setValue] = useState("");
@@ -121,7 +120,7 @@ const ContactForm = () => {
           </div> */}
 
           <label className="container">
-            You agree to providing your data to {name} who may contact you.
+            You agree to providing your data to name who may contact you.
             <input type="checkbox" />
             <span className="checkmark"></span>
           </label>
