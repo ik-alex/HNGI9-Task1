@@ -82,7 +82,7 @@ const ContactForm = () => {
           </div>
           <a
             href="#"
-            className="px-10 py-3 mt-8 text-white text-center bg-backgroundBlue rounded-lg hover:bg-cyanLight focus:outline-none md:py-2 hover:bg-lightBlue"
+            className="px-10 py-3 mt-8 text-white text-center bg-backgroundBlue rounded-lg hover:bg-cyanLight focus:outline-none md:py-2"
           >
             Send Message
           </a>

@@ -5,16 +5,13 @@ const ContactForm = () => {
   return (
     <>
       <section className="container mx-auto p-6 py-8 md:max-w-2xl">
-        <div className=" mx-auto container flex flex-col space-y-2 pt-8">
-          <h2 className="text-extrabold text-3xl">Contact Me</h2>
+        <div className=" mx-auto container flex flex-col space-y-2">
+          <h2 className="text-extrabold text-3xl bg-red-500">Contact Me</h2>
           <p className="max-w-sm md:max-w-full text-lightGrey">
             Hi there, contact me to ask me about anything you have in mind.
           </p>
         </div>
-        <form
-          id=""
-          className=" flex flex-col w-full py-10 space-y-4  rounded-lg "
-        >
+        <form id="" className="  flex-col w-full py-10 space-y-4  rounded-lg ">
           <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-between">
             <div className="w-full">
               <label for="name" className="pb-2">
@@ -80,12 +77,14 @@ const ContactForm = () => {
               </p>
             </div>
           </div>
-          <a
-            href="#"
-            className="px-10 py-3 mt-8 text-white text-center bg-backgroundBlue rounded-lg hover:bg-cyanLight focus:outline-none md:py-2 hover:bg-lightBlue"
-          >
-            Send Message
-          </a>
+          <div className="w-full">
+            <a
+              href="#"
+              className="px-10 py-3 mt-8 text-white text-center bg-backgroundBlue rounded-lg hover:bg-cyanLight focus:outline-none md:py-2"
+            >
+              Send Message
+            </a>
+          </div>
         </form>
       </section>
     </>

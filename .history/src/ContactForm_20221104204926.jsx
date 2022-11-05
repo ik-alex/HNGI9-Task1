@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <>
       <section className="container mx-auto p-6 py-8 md:max-w-2xl">
-        <div className=" mx-auto container flex flex-col space-y-2 pt-8">
+        <div className=" mx-auto container flex flex-col space-y-2">
           <h2 className="text-extrabold text-3xl">Contact Me</h2>
           <p className="max-w-sm md:max-w-full text-lightGrey">
             Hi there, contact me to ask me about anything you have in mind.
@@ -82,7 +82,7 @@ const ContactForm = () => {
           </div>
           <a
             href="#"
-            className="px-10 py-3 mt-8 text-white text-center bg-backgroundBlue rounded-lg hover:bg-cyanLight focus:outline-none md:py-2 hover:bg-lightBlue"
+            className="px-10 py-3 mt-8 text-white text-center bg-backgroundBlue rounded-lg hover:bg-cyanLight focus:outline-none md:py-2"
           >
             Send Message
           </a>
